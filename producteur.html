@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Teranga Marché | Producteurs</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="site-header"><a class="logo" href="index.html">TERANGA MARCHÉ</a><nav><a href="index.html">Accueil</a><a href="acheteur.html">Acheteurs</a><a class="active" href="producteur.html">Producteurs</a></nav></header>
+<section class="producer-hero"><span class="eyebrow">ESPACE PRODUCTEUR</span><h1>Valorisez votre récolte</h1><p>Présentez vos produits agricoles et trouvez facilement des acheteurs.</p></section>
+<main class="container">
+<section class="form-section">
+<div class="section-heading"><h2>Publier un produit</h2><p>Remplissez les informations de votre produit.</p></div>
+<form id="productForm">
+<div class="form-grid">
+<div class="form-group"><label for="name">Nom du produit</label><input id="name" type="text" maxlength="80" placeholder="Ex. : Tomates fraîches" required></div>
+<div class="form-group"><label for="category">Catégorie</label><select id="category" required><option value="">Choisir une catégorie</option><option>Légumes</option><option>Fruits</option><option>Céréales</option><option>Autres</option></select></div>
+<div class="form-group"><label for="price">Prix (FCFA)</label><input id="price" type="number" min="1" step="1" placeholder="Ex. : 500" required></div>
+<div class="form-group"><label for="unit">Unité de vente</label><select id="unit"><option value="kg">Kilogramme (kg)</option><option value="sac">Sac</option><option value="caisse">Caisse</option><option value="unité">Unité</option><option value="litre">Litre</option></select></div>
+<div class="form-group"><label for="quantity">Quantité disponible</label><input id="quantity" type="number" min="1" step="1" placeholder="Ex. : 200" required></div>
+<div class="form-group"><label for="region">Région</label><select id="region" required><option value="">Choisir une région</option><option>Dakar</option><option>Thiès</option><option>Diourbel</option><option>Kaolack</option><option>Saint-Louis</option><option>Ziguinchor</option><option>Fatick</option><option>Louga</option><option>Kolda</option><option>Tambacounda</option><option>Matam</option><option>Kédougou</option><option>Sédhiou</option></select></div>
+<div class="form-group"><label for="producer">Nom du producteur</label><input id="producer" type="text" maxlength="80" placeholder="Votre nom" required></div>
+<div class="form-group"><label for="phone">Téléphone WhatsApp</label><input id="phone" type="tel" placeholder="Ex. : 771234567" required><small>Pour le Sénégal, saisissez les 9 chiffres ou le numéro avec indicatif 221.</small></div>
+<div class="form-group full-width"><label for="image">Photo du produit (facultatif, 2 Mo maximum)</label><input id="image" type="file" accept="image/*"></div>
+<div class="form-group full-width"><label for="description">Description</label><textarea id="description" rows="4" maxlength="500" placeholder="Décrivez votre produit..."></textarea></div>
+</div>
+<button type="submit" class="btn">Publier mon produit</button><p id="formMessage" class="form-message" role="status"></p>
+</form>
+</section>
+<section class="my-products"><div class="section-heading"><h2>Annonces enregistrées sur cet appareil</h2><p>Vous pouvez supprimer une annonce depuis cette liste.</p></div><div id="producerProducts" class="products" aria-live="polite"></div></section>
+</main>
+<footer><p>© 2026 Teranga Marché - Tous droits réservés.</p></footer>
+<script src="script.js"></script>
+</body></html>

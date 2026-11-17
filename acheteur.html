@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Teranga Marché | Acheteurs</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="site-header"><a class="logo" href="index.html">TERANGA MARCHÉ</a><nav><a href="index.html">Accueil</a><a class="active" href="acheteur.html">Acheteurs</a><a href="producteur.html">Producteurs</a></nav></header>
+<section class="hero buyer-hero"><div><span class="eyebrow light">ACHETER LOCAL</span><h1>Les produits agricoles près de chez vous</h1><p>Découvrez les produits de nos agriculteurs et contactez directement les producteurs.</p><a href="#produits" class="btn">Découvrir les produits</a></div></section>
+<main class="container" id="produits">
+<div class="section-heading"><h2>Produits disponibles</h2><p>Retrouvez les annonces publiées par les producteurs.</p></div>
+<div class="filters">
+<input type="search" id="search" placeholder="Rechercher un produit ou un producteur..." aria-label="Rechercher">
+<select id="category" aria-label="Filtrer par catégorie"><option value="all">Toutes les catégories</option><option>Légumes</option><option>Fruits</option><option>Céréales</option><option>Autres</option></select>
+<select id="region" aria-label="Filtrer par région"><option value="all">Toutes les régions</option><option>Dakar</option><option>Thiès</option><option>Diourbel</option><option>Kaolack</option><option>Saint-Louis</option><option>Ziguinchor</option><option>Fatick</option><option>Louga</option><option>Kolda</option><option>Tambacounda</option><option>Matam</option><option>Kédougou</option><option>Sédhiou</option></select>
+</div>
+<div id="productGrid" class="products" aria-live="polite"></div><p id="empty" class="empty hidden">Aucun produit trouvé. Essayez de modifier votre recherche.</p>
+</main>
+<footer><p>© 2026 Teranga Marché - Tous droits réservés.</p></footer>
+<script src="script.js"></script>
+</body></html>
